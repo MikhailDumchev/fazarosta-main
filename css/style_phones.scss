@@ -1,0 +1,46 @@
+/* 
+    Created on : 19.10.2017, 18:38:57
+    Author     : Mikhail Dumchev
+*/
+@import "_common-style.scss";
+@import "_mobile-grid.scss";
+.frame {
+    padding: 0px 16px;
+}
+body {
+    background-color: rgb(35, 35, 43);
+}
+header {
+    text-align: center;
+    padding: 25px 0px;
+    a.logotype-container {
+        display: inline-table;
+        text-decoration: none;
+        .logotype-image {
+            display: table-cell;
+            width: 30px;
+            height: 30px;
+            .logotype {
+                fill: rgb(255, 255, 255);
+            }
+        }
+        h1 {
+            display: table-cell;
+            padding-left: 10px;
+            font-family: $museo100;
+            font-size: 24px;
+            color: rgb(255, 255, 255);
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}
+.main-module {
+    h2 {
+        font-family: $museo700;
+        font-size: 30px;
+        color: rgb(255, 255, 255);
+        text-align: center;
+    }
+}

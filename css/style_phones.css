@@ -1,0 +1,161 @@
+/* 
+    Created on : 19.10.2017, 18:38:57
+    Author     : Mikhail Dumchev
+*/
+/* 
+    Created on : 19.10.2017, 18:46:37
+    Author     : Mikhai Dumchev
+*/
+@font-face {
+  font-family: "Museo-700";
+  src: url("../fonts/Museo-700.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Museo-300";
+  src: url("../fonts/Museo-300.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Museo-100";
+  src: url("../fonts/Museo-100.ttf") format("truetype");
+}
+.error-message {
+  font-family: "Museo-100", Arial;
+}
+
+/* 
+    Created on : 17.10.2017, 12:04:31
+    Author     : Mikhail Dumchev
+*/
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+.frame {
+  width: 100%;
+  margin: 0px auto;
+}
+
+.internal-frame {
+  font-size: 0;
+}
+.internal-frame .column {
+  display: inline-block;
+  vertical-align: top;
+}
+.internal-frame .column-table {
+  display: inline-table;
+}
+
+.additory-module {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.m-1 {
+  width: 8.33%;
+}
+
+.m-2 {
+  width: 16.66%;
+}
+
+.m-3 {
+  width: 25%;
+}
+
+.m-4 {
+  width: 33.33%;
+}
+
+.m-5 {
+  width: 41.66%;
+}
+
+.m-6 {
+  width: 50%;
+}
+
+.m-7 {
+  width: 58.33%;
+}
+
+.m-8 {
+  width: 66.66%;
+}
+
+.m-9 {
+  width: 75%;
+}
+
+.m-10 {
+  width: 83.11%;
+}
+
+.m-11 {
+  width: 91.66%;
+}
+
+.m-12 {
+  width: 100%;
+}
+
+.to-right {
+  float: right;
+}
+
+.m-to-right {
+  float: right;
+}
+
+.m-to-left {
+  float: left;
+}
+
+.m-hidden {
+  display: none !important;
+}
+
+.frame {
+  padding: 0px 16px;
+}
+
+body {
+  background-color: #23232b;
+}
+
+header {
+  text-align: center;
+  padding: 25px 0px;
+}
+header a.logotype-container {
+  display: inline-table;
+  text-decoration: none;
+}
+header a.logotype-container .logotype-image {
+  display: table-cell;
+  width: 30px;
+  height: 30px;
+}
+header a.logotype-container .logotype-image .logotype {
+  fill: white;
+}
+header a.logotype-container h1 {
+  display: table-cell;
+  padding-left: 10px;
+  font-family: "Museo-100", Arial;
+  font-size: 24px;
+  color: white;
+}
+header a.logotype-container h1:hover {
+  cursor: pointer;
+}
+
+.main-module h2 {
+  font-family: "Museo-700", Arial;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+}
+
+/*# sourceMappingURL=style_phones.css.map */

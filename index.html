@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css" media="screen and (min-width: 781px)">
+        <link rel="stylesheet" href="css/style_phones.css" media="screen and (max-width: 780px)">
+    </head>
+    <body>
+        <div class="frame">
+            <header>
+                <div class="internal-frame">
+                    <a href="#" class="logotype-container">
+                        <div class="additory-module logotype-image">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 128 128">
+                                <title>logo-faza</title>
+                                <polygon class="logotype" points="112 48 96 32 80 16 64 0 48 16 32 32 16 48 0 64 16 80 32 64 48 80 64 64 48 48 64 32 80 48 96 64 112 80 128 64 112 48"/>
+                                <rect class="logotype" x="52.69" y="100.69" width="22.63" height="22.63" transform="translate(-60.45 78.06) rotate(-45)"/>
+                            </svg>
+                        </div>
+                        <h1 class="additory-module">FazaRosta</h1>
+                    </a>
+                </div>
+            </header>
+            <main>
+                <section class="main-module">
+                    <div class="additory-module">
+                        <h2>Запуск через:</h2>
+                        <!--<div class="timer">
+                            <span class="cell hours">00</span>
+                            <span class="cell minutes">00</span>
+                            <span class="cell seconds">00</span>
+                        </div>-->
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                        <form method="POST" action="" onsubmit="return false;">
+                            <input type="email" name="email" placeholder="Ваш email" data-required="true" data-type="3">
+                            <input type="submit" value="Подписаться" class="request-caller button">
+                        </form>
+                        <div class="social-networks-container">
+                            <div class="icon">
+                                <a href="#" title="Нажмите, чтобы перейти по ссылке;" class="social-network-icon facebook-icon"></a>
+                            </div>
+                            <div class="icon">
+                                <a href="#" title="Нажмите, чтобы перейти по ссылке;" class="social-network-icon twitter-icon"></a>
+                            </div>
+                            <div class="icon">
+                                <a href="#" title="Нажмите, чтобы перейти по ссылке;" class="social-network-icon vkontakte-icon"></a>
+                            </div>
+                            <div class="icon">
+                                <a href="#" title="Нажмите, чтобы перейти по ссылке;" class="social-network-icon telegram-icon"></a>
+                            </div>
+                            <div class="icon">
+                                <a href="#" title="Нажмите, чтобы перейти по ссылке;" class="social-network-icon instagram-icon"></a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+        <script src="js/basic-functions.js"></script>
+        <!--<script src="js/timer.js"></script>-->
+        <script src="js/validation.js"></script>
+        <script src="js/sender.js"></script>
+        <script>
+            window.onload = function() {
+                "use strict";
+//                var timerObject = new Timer();
+//                timerObject.createTimer(document.getElementsByClassName("timer")[0]);
+                var senderObject = new Sender();
+                senderObject.appendHandler(document.getElementsByClassName("request-caller")[0]);
+            };
+        </script>
+    </body>
+</html>

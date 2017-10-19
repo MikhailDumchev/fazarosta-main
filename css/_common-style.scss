@@ -1,0 +1,23 @@
+/* 
+    Created on : 19.10.2017, 18:46:37
+    Author     : Mikhai Dumchev
+*/
+$museo100: "Museo-100", Arial;
+$museo300: "Museo-300", Arial;
+$museo700: "Museo-700", Arial;
+$socialNetworks: ("facebook", "twitter", "vkontakte", "telegram", "instagram");
+@font-face {
+    font-family: "Museo-700";
+    src: url("../fonts/Museo-700.ttf") format('truetype');
+}
+@font-face {
+    font-family: "Museo-300";
+    src: url("../fonts/Museo-300.ttf") format('truetype');
+}
+@font-face {
+    font-family: "Museo-100";
+    src: url("../fonts/Museo-100.ttf") format('truetype');
+}
+.error-message {
+    font-family: $museo100;
+}

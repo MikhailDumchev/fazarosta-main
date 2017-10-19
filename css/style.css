@@ -1,0 +1,284 @@
+@charset "UTF-8";
+/* 
+    Created on : 19.10.2017, 16:09:04
+    Author     : Mikhail Dumchev
+*/
+/* 
+    Created on : 19.10.2017, 18:46:37
+    Author     : Mikhai Dumchev
+*/
+@font-face {
+  font-family: "Museo-700";
+  src: url("../fonts/Museo-700.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Museo-300";
+  src: url("../fonts/Museo-300.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Museo-100";
+  src: url("../fonts/Museo-100.ttf") format("truetype");
+}
+.error-message {
+  font-family: "Museo-100", Arial;
+}
+
+/* 
+    Created on : 19.10.2017, 12:25:20
+    Author     : Mikhail Dumchev
+*/
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.internal-frame {
+  max-width: 1180px;
+  min-width: 980px;
+  margin: 0px auto;
+  font-size: 0;
+}
+
+.column {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.column-table {
+  display: inline-table;
+}
+
+.additory-module {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.d-1 {
+  width: 8.33%;
+}
+
+.d-2 {
+  width: 16.66%;
+}
+
+.d-3 {
+  width: 25%;
+}
+
+.d-4 {
+  width: 33.33%;
+}
+
+.d-5 {
+  width: 41.66%;
+}
+
+.d-6 {
+  width: 50%;
+}
+
+.d-7 {
+  width: 58.33%;
+}
+
+.d-8 {
+  width: 66.66%;
+}
+
+.d-9 {
+  width: 75%;
+}
+
+.d-10 {
+  width: 83.11%;
+}
+
+.d-11 {
+  width: 91.66%;
+}
+
+.d-12 {
+  width: 100%;
+}
+
+.left-padding {
+  padding-left: 80px;
+}
+
+.right-padding {
+  padding-right: 80px;
+}
+
+.to-right {
+  float: right;
+}
+
+body {
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: 100% 50%;
+  background-image: url("../images/background.png");
+}
+
+.frame {
+  height: 100vh;
+}
+
+header {
+  position: absolute;
+  top: 0px;
+  z-index: 5;
+  padding: 32px 0px;
+}
+header a.logotype-container {
+  margin-left: 45px;
+  display: inline-table;
+  text-decoration: none;
+}
+header a.logotype-container .logotype-image {
+  display: table-cell;
+  width: 30px;
+  height: 30px;
+}
+header a.logotype-container .logotype-image .logotype {
+  fill: white;
+}
+header a.logotype-container h1 {
+  display: table-cell;
+  padding-left: 10px;
+  font-family: "Museo-100", Arial;
+  font-size: 24px;
+  color: white;
+}
+header a.logotype-container h1:hover {
+  cursor: pointer;
+}
+
+main {
+  position: relative;
+  padding-left: 45px;
+  max-width: 580px;
+  height: 100%;
+  background-color: #23232b;
+}
+main:before {
+  position: absolute;
+  left: 30%;
+  display: block;
+  content: "";
+  width: 100%;
+  height: 100%;
+  -webkit-transform: skew(-20deg);
+  -moz-transform: skew(-20deg);
+  -o-transform: skew(-20deg);
+  background-color: #23232b;
+}
+
+.main-module {
+  position: absolute;
+  display: table;
+  width: 100%;
+  height: 100%;
+  /*    .timer {
+          .cell {
+              font-size: 28px;
+              font-family: $museo700;
+              color: rgb(255, 255, 255);
+              &:after {
+                  padding-left: 5px;
+                  font-size: 28px;
+                  font-family: $museo700;
+                  color: rgb(255, 255, 255);
+              }
+              &:not(:last-of-type):after {
+                  padding-right: 10px;
+              }
+              &.days:after {
+                  content: "дней";
+              }
+              &.hours:after {
+                  content: "часов";
+              }
+              &.minutes:after {
+                  content: "минут";
+              }
+              &.seconds:after {
+                  content: "секунд";
+              }
+          }
+      }*/
+}
+.main-module h2 {
+  font-family: "Museo-700", Arial;
+  font-size: 40px;
+  color: white;
+}
+.main-module p {
+  padding: 35px 0px;
+  font-family: "Museo-300", Arial;
+  font-size: 16px;
+  color: white;
+  line-height: 130%;
+}
+.main-module form input:not(.button) {
+  margin-right: 11px;
+  height: 50px;
+  text-indent: 1.2em;
+  color: #c4c4c4;
+  font-size: 18px;
+  font-family: "Museo-100", Arial;
+  border: 2px solid white;
+  background-color: inherit;
+}
+.main-module form .button {
+  padding: 14px;
+  border: none;
+  font-family: "Museo-100", Arial;
+  font-weight: 300;
+  font-size: 18px;
+  color: white;
+  background: #76ead5;
+  background: -moz-linear-gradient(left, #76ead5 0%, #3dc9de 51%, #0face6 100%);
+  background: -webkit-linear-gradient(left, #76ead5 0%, #3dc9de 51%, #0face6 100%);
+  background: linear-gradient(to right, #76ead5 0%, #3dc9de 51%, #0face6 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#76ead5', endColorstr='#0face6',GradientType=1 );
+}
+.main-module form .button:hover {
+  cursor: pointer;
+}
+
+.social-networks-container {
+  position: absolute;
+  bottom: 30px;
+}
+.social-networks-container .icon {
+  display: inline-block;
+}
+.social-networks-container .icon:not(:last-child) {
+  margin-right: 30px;
+}
+.social-networks-container .icon .social-network-icon {
+  display: block;
+  width: 26px;
+  height: 26px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+.social-networks-container .icon .social-network-icon.facebook-icon {
+  background-image: url("../images/social-networks/facebook.svg");
+}
+.social-networks-container .icon .social-network-icon.twitter-icon {
+  background-image: url("../images/social-networks/twitter.svg");
+}
+.social-networks-container .icon .social-network-icon.vkontakte-icon {
+  background-image: url("../images/social-networks/vkontakte.svg");
+}
+.social-networks-container .icon .social-network-icon.telegram-icon {
+  background-image: url("../images/social-networks/telegram.svg");
+}
+.social-networks-container .icon .social-network-icon.instagram-icon {
+  background-image: url("../images/social-networks/instagram.svg");
+}
+
+/*# sourceMappingURL=style.css.map */
